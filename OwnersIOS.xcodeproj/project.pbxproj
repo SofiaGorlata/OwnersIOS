@@ -165,7 +165,6 @@
 				F97E8067E78F945630267077 /* Pods-OwnersIOSTests.debug.xcconfig */,
 				5DC31482DA3DE37CB36DC059 /* Pods-OwnersIOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
