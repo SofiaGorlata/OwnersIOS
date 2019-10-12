@@ -17,6 +17,8 @@
 		C35EE7FC233BD98400224078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35EE7FA233BD98400224078 /* LaunchScreen.storyboard */; };
 		C35EE807233BD98400224078 /* OwnersIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE806233BD98400224078 /* OwnersIOSTests.swift */; };
 		C35EE812233BD98400224078 /* OwnersIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE811233BD98400224078 /* OwnersIOSUITests.swift */; };
+		C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372532B2352326100B11E39 /* MainTabBarController.swift */; };
+		C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37253372352358E00B11E39 /* ViewControllersFactory.swift */; };
 		F372787FC59C6954735B025E /* Pods_OwnersIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2479D37130DF07E7E73454 /* Pods_OwnersIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		C35EE80D233BD98400224078 /* OwnersIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwnersIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35EE811233BD98400224078 /* OwnersIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersIOSUITests.swift; sourceTree = "<group>"; };
 		C35EE813233BD98400224078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C372532B2352326100B11E39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C37253372352358E00B11E39 /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
 		CB7296137B202F710923F49F /* Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-OwnersIOS-OwnersIOSUITests/Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD2479D37130DF07E7E73454 /* Pods_OwnersIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OwnersIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE185C1A6D3B55064F4F50C /* Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-OwnersIOS-OwnersIOSUITests/Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +120,10 @@
 		C35EE7EE233BD97F00224078 /* OwnersIOS */ = {
 			isa = PBXGroup;
 			children = (
+				C37253302352344E00B11E39 /* Services */,
+				C372532F2352340C00B11E39 /* CreatePost */,
+				C372532E235233FD00B11E39 /* Feed */,
+				C372532D235233A300B11E39 /* MainNavigation */,
 				C35EE7EF233BD97F00224078 /* AppDelegate.swift */,
 				C35EE7F1233BD97F00224078 /* SceneDelegate.swift */,
 				C35EE7F3233BD97F00224078 /* ViewController.swift */,
@@ -143,6 +151,84 @@
 				C35EE813233BD98400224078 /* Info.plist */,
 			);
 			path = OwnersIOSUITests;
+			sourceTree = "<group>";
+		};
+		C372532D235233A300B11E39 /* MainNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				C372532B2352326100B11E39 /* MainTabBarController.swift */,
+				C37253372352358E00B11E39 /* ViewControllersFactory.swift */,
+			);
+			path = MainNavigation;
+			sourceTree = "<group>";
+		};
+		C372532E235233FD00B11E39 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				C3725336235234A700B11E39 /* ViewControllerBuilder */,
+				C37253352352349E00B11E39 /* ViewController */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		C372532F2352340C00B11E39 /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+				C37253342352348800B11E39 /* ViewControllerBuilder */,
+				C37253332352347C00B11E39 /* ViewController */,
+			);
+			path = CreatePost;
+			sourceTree = "<group>";
+		};
+		C37253302352344E00B11E39 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C37253322352346A00B11E39 /* ViewControllerBuilder */,
+				C37253312352346000B11E39 /* ViewController */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C37253312352346000B11E39 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C37253322352346A00B11E39 /* ViewControllerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllerBuilder;
+			sourceTree = "<group>";
+		};
+		C37253332352347C00B11E39 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C37253342352348800B11E39 /* ViewControllerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllerBuilder;
+			sourceTree = "<group>";
+		};
+		C37253352352349E00B11E39 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C3725336235234A700B11E39 /* ViewControllerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllerBuilder;
 			sourceTree = "<group>";
 		};
 		D220FAF46BEBAFD9A7E71ED3 /* Frameworks */ = {
@@ -372,7 +458,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */,
+				C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */,
 				C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */,
+				C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */,
 				C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
