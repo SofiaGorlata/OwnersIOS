@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7560777087A938287CB25C4E /* Pods_OwnersIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E086957FF933648979F3A639 /* Pods_OwnersIOSTests.framework */; };
 		8010C1826E0BC1DD98688618 /* Pods_OwnersIOS_OwnersIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3BD6846FBE0F38DD6C7557 /* Pods_OwnersIOS_OwnersIOSUITests.framework */; };
+		C32F2B062352428200D1899C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F2B052352428200D1899C /* UIImage+Extension.swift */; };
 		C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7EF233BD97F00224078 /* AppDelegate.swift */; };
 		C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7F1233BD97F00224078 /* SceneDelegate.swift */; };
 		C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7F3233BD97F00224078 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		5DC31482DA3DE37CB36DC059 /* Pods-OwnersIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOSTests.release.xcconfig"; path = "Target Support Files/Pods-OwnersIOSTests/Pods-OwnersIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6369573B46B5A5DE1C392A6D /* Pods-OwnersIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS.release.xcconfig"; path = "Target Support Files/Pods-OwnersIOS/Pods-OwnersIOS.release.xcconfig"; sourceTree = "<group>"; };
 		B0990EC24EE0DA45047C9E79 /* Pods-OwnersIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS.debug.xcconfig"; path = "Target Support Files/Pods-OwnersIOS/Pods-OwnersIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C32F2B052352428200D1899C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		C35EE7EC233BD97F00224078 /* OwnersIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwnersIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35EE7EF233BD97F00224078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35EE7F1233BD97F00224078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C32F2B032352425600D1899C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C32F2B042352426B00D1899C /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C32F2B042352426B00D1899C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C32F2B052352428200D1899C /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C35EE7E3233BD97F00224078 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +138,7 @@
 		C35EE7EE233BD97F00224078 /* OwnersIOS */ = {
 			isa = PBXGroup;
 			children = (
+				C32F2B032352425600D1899C /* Helpers */,
 				C37253302352344E00B11E39 /* Services */,
 				C372532F2352340C00B11E39 /* CreatePost */,
 				C372532E235233FD00B11E39 /* Feed */,
@@ -460,6 +479,7 @@
 				C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */,
 				C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */,
 				C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */,
+				C32F2B062352428200D1899C /* UIImage+Extension.swift in Sources */,
 				C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */,
 				C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */,
 			);
