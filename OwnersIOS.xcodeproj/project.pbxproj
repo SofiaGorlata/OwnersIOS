@@ -20,6 +20,7 @@
 		C35EE812233BD98400224078 /* OwnersIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE811233BD98400224078 /* OwnersIOSUITests.swift */; };
 		C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372532B2352326100B11E39 /* MainTabBarController.swift */; };
 		C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37253372352358E00B11E39 /* ViewControllersFactory.swift */; };
+		C3ADE7C523562E6D009B6377 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */; };
 		F372787FC59C6954735B025E /* Pods_OwnersIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2479D37130DF07E7E73454 /* Pods_OwnersIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		C35EE813233BD98400224078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C372532B2352326100B11E39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C37253372352358E00B11E39 /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
+		C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CB7296137B202F710923F49F /* Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-OwnersIOS-OwnersIOSUITests/Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD2479D37130DF07E7E73454 /* Pods_OwnersIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OwnersIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE185C1A6D3B55064F4F50C /* Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-OwnersIOS-OwnersIOSUITests/Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C32F2B052352428200D1899C /* UIImage+Extension.swift */,
+				C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3ADE7C523562E6D009B6377 /* UIColor+Extension.swift in Sources */,
 				C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */,
 				C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */,
 				C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */,
