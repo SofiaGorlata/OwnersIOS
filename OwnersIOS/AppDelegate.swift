@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Inmplementation is in SceneDelegate
         } else {
             window = UIWindow(frame: UIScreen.main.bounds)
-            window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
+            window?.rootViewController = MainTabBarController()
             window?.makeKeyAndVisible()
         }
 

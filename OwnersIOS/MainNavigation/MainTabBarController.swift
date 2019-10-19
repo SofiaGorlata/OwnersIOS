@@ -21,31 +21,35 @@ class MainTabBarController: UITabBarController {
     
     private func setupTabBarItems() {
         tabBar.backgroundColor = .white
+        tabBar.barTintColor = .white
+        tabBar.tintColor = UIColor.sand
+        tabBar.unselectedItemTintColor = UIColor.tabbarGray
         
-        let feedViewController = UIViewController()
+        let feedViewController = FeedViewController()
+        let navFeedViewController = UINavigationController(rootViewController: feedViewController)
         
-        let createPostViewController = UIViewController()
+        let createPostViewController = CreatePostViewController()
+        let navCreatePostViewController = UINavigationController(rootViewController: createPostViewController)
         
-        let servicesViewController = UIViewController()
+        
+        let servicesViewController = ServicesViewController()
+        let navServicesViewController = UINavigationController(rootViewController: servicesViewController)
         
         
-        tabBarList = [feedViewController, createPostViewController, servicesViewController]
+        tabBarList = [navFeedViewController, navCreatePostViewController, navServicesViewController]
 
         viewControllers = tabBarList
         
         let feedItem = tabBar.items?[0]
-        feedItem?.selectedImage = UIImage(named: "baseline_house_white")?.tint(with: UIColor.purpleBlue)
-        feedItem?.image = UIImage(named: "baseline_house_white")?.tint(with: UIColor.lightPurple)
+        feedItem?.image = UIImage(named: "baseline_house_white")
         feedItem?.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: 0, right: 0)
         
         let addPostItem = tabBar.items?[1]
-        addPostItem?.selectedImage = UIImage(named: "baseline_add_box_white")?.tint(with: UIColor.purpleBlue)
-        addPostItem?.image = UIImage(named: "baseline_add_box_white")?.tint(with: UIColor.lightPurple)
+        addPostItem?.image = UIImage(named: "baseline_add_box_white")
         addPostItem?.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: 0, right: 0)
         
         let services = tabBar.items?[2]
-        services?.selectedImage = UIImage(named: "baseline_build_white")?.tint(with: UIColor.purpleBlue)
-        services?.image = UIImage(named: "baseline_build_white")?.tint(with: UIColor.lightPurple)
+        services?.image = UIImage(named: "baseline_build_white")
         services?.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: 0, right: 0)
     }
 }

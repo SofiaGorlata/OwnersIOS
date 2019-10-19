@@ -21,6 +21,9 @@
 		C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372532B2352326100B11E39 /* MainTabBarController.swift */; };
 		C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37253372352358E00B11E39 /* ViewControllersFactory.swift */; };
 		C3ADE7C523562E6D009B6377 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */; };
+		C3ADE7C823563077009B6377 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADE7C723563077009B6377 /* FeedViewController.swift */; };
+		C3ADE7CA2356310C009B6377 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADE7C92356310C009B6377 /* CreatePostViewController.swift */; };
+		C3ADE7CC2356313A009B6377 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADE7CB2356313A009B6377 /* ServicesViewController.swift */; };
 		F372787FC59C6954735B025E /* Pods_OwnersIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2479D37130DF07E7E73454 /* Pods_OwnersIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,9 @@
 		C372532B2352326100B11E39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C37253372352358E00B11E39 /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
 		C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C3ADE7C723563077009B6377 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C3ADE7C92356310C009B6377 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		C3ADE7CB2356313A009B6377 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		CB7296137B202F710923F49F /* Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-OwnersIOS-OwnersIOSUITests/Pods-OwnersIOS-OwnersIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD2479D37130DF07E7E73454 /* Pods_OwnersIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OwnersIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE185C1A6D3B55064F4F50C /* Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-OwnersIOS-OwnersIOSUITests/Pods-OwnersIOS-OwnersIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +220,7 @@
 		C37253312352346000B11E39 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C3ADE7CB2356313A009B6377 /* ServicesViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 		C37253332352347C00B11E39 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C3ADE7C92356310C009B6377 /* CreatePostViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -242,6 +250,7 @@
 		C37253352352349E00B11E39 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C3ADE7C723563077009B6377 /* FeedViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -485,6 +494,9 @@
 				C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */,
 				C32F2B062352428200D1899C /* UIImage+Extension.swift in Sources */,
 				C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */,
+				C3ADE7C823563077009B6377 /* FeedViewController.swift in Sources */,
+				C3ADE7CA2356310C009B6377 /* CreatePostViewController.swift in Sources */,
+				C3ADE7CC2356313A009B6377 /* ServicesViewController.swift in Sources */,
 				C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

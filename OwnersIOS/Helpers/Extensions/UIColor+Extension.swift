@@ -28,4 +28,9 @@ extension UIColor {
     class var sand: UIColor {
         return #colorLiteral(red: 0.9921568627, green: 0.737254902, blue: 0.6549019608, alpha: 1)
     }
+    
+    class var tabbarGray: UIColor {
+        return #colorLiteral(red: 0.8392156863, green: 0.8470588235, blue: 0.8431372549, alpha: 1)
+    }
+    
 }
