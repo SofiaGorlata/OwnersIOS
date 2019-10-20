@@ -22,7 +22,7 @@ class MainTabBarController: UITabBarController {
     private func setupTabBarItems() {
         tabBar.backgroundColor = .white
         tabBar.barTintColor = .white
-        tabBar.tintColor = UIColor.sand
+        tabBar.tintColor = UIColor.purpleBlue
         tabBar.unselectedItemTintColor = UIColor.tabbarGray
         
         let feedViewController = FeedViewController()
