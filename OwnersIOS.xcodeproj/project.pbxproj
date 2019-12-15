@@ -11,7 +11,6 @@
 		C350F60D23A663BC00559AED /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F60C23A663BC00559AED /* ParentViewController.swift */; };
 		C350F61023A6668600559AED /* ServicesCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F60F23A6668600559AED /* ServicesCollectionDataSource.swift */; };
 		C350F61223A6669D00559AED /* ServicesCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61123A6669D00559AED /* ServicesCollectionDelegate.swift */; };
-		C350F61423A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61323A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift */; };
 		C350F61623A672A900559AED /* ServiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61523A672A900559AED /* ServiceCollectionCell.swift */; };
 		C350F61823A674DE00559AED /* ServiceCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61723A674DE00559AED /* ServiceCollectionViewModel.swift */; };
 		C350F61A23A675C200559AED /* ServicesCollectionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61923A675C200559AED /* ServicesCollectionHolder.swift */; };
@@ -58,7 +57,6 @@
 		C350F60C23A663BC00559AED /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		C350F60F23A6668600559AED /* ServicesCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionDataSource.swift; sourceTree = "<group>"; };
 		C350F61123A6669D00559AED /* ServicesCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionDelegate.swift; sourceTree = "<group>"; };
-		C350F61323A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionDelegateFlowLayout.swift; sourceTree = "<group>"; };
 		C350F61523A672A900559AED /* ServiceCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionCell.swift; sourceTree = "<group>"; };
 		C350F61723A674DE00559AED /* ServiceCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewModel.swift; sourceTree = "<group>"; };
 		C350F61923A675C200559AED /* ServicesCollectionHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionHolder.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			children = (
 				C350F60F23A6668600559AED /* ServicesCollectionDataSource.swift */,
 				C350F61123A6669D00559AED /* ServicesCollectionDelegate.swift */,
-				C350F61323A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift */,
 				C350F61523A672A900559AED /* ServiceCollectionCell.swift */,
 				C350F61723A674DE00559AED /* ServiceCollectionViewModel.swift */,
 				C350F61923A675C200559AED /* ServicesCollectionHolder.swift */,
@@ -490,7 +487,6 @@
 				C350F61623A672A900559AED /* ServiceCollectionCell.swift in Sources */,
 				C350F61823A674DE00559AED /* ServiceCollectionViewModel.swift in Sources */,
 				C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */,
-				C350F61423A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift in Sources */,
 				C3ADE7C823563077009B6377 /* FeedViewController.swift in Sources */,
 				C350F61A23A675C200559AED /* ServicesCollectionHolder.swift in Sources */,
 				C350F61023A6668600559AED /* ServicesCollectionDataSource.swift in Sources */,
