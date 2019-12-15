@@ -16,6 +16,12 @@
 		C350F61A23A675C200559AED /* ServicesCollectionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61923A675C200559AED /* ServicesCollectionHolder.swift */; };
 		C350F61C23A679EC00559AED /* ServicesViewModelInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61B23A679EC00559AED /* ServicesViewModelInitializer.swift */; };
 		C350F61E23A67A6000559AED /* ServicesViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61D23A67A6000559AED /* ServicesViewControllerBuilder.swift */; };
+		C350F62123A69D8E00559AED /* FeedTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F62023A69D8E00559AED /* FeedTableViewDelegate.swift */; };
+		C350F62323A69DBE00559AED /* FeedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F62223A69DBE00559AED /* FeedTableViewDataSource.swift */; };
+		C350F62523A69E0A00559AED /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F62423A69E0A00559AED /* FeedTableViewCell.swift */; };
+		C350F62823A6B42E00559AED /* PostInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F62723A6B42E00559AED /* PostInfoView.swift */; };
+		C350F62A23A6B44800559AED /* UserInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F62923A6B44800559AED /* UserInfoHeaderView.swift */; };
+		C350F62C23A6B58F00559AED /* FeedViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F62B23A6B58F00559AED /* FeedViewControllerBuilder.swift */; };
 		C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7EF233BD97F00224078 /* AppDelegate.swift */; };
 		C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7F1233BD97F00224078 /* SceneDelegate.swift */; };
 		C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7F3233BD97F00224078 /* ViewController.swift */; };
@@ -62,6 +68,12 @@
 		C350F61923A675C200559AED /* ServicesCollectionHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionHolder.swift; sourceTree = "<group>"; };
 		C350F61B23A679EC00559AED /* ServicesViewModelInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModelInitializer.swift; sourceTree = "<group>"; };
 		C350F61D23A67A6000559AED /* ServicesViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewControllerBuilder.swift; sourceTree = "<group>"; };
+		C350F62023A69D8E00559AED /* FeedTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewDelegate.swift; sourceTree = "<group>"; };
+		C350F62223A69DBE00559AED /* FeedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewDataSource.swift; sourceTree = "<group>"; };
+		C350F62423A69E0A00559AED /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		C350F62723A6B42E00559AED /* PostInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInfoView.swift; sourceTree = "<group>"; };
+		C350F62923A6B44800559AED /* UserInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderView.swift; sourceTree = "<group>"; };
+		C350F62B23A6B58F00559AED /* FeedViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerBuilder.swift; sourceTree = "<group>"; };
 		C35EE7EC233BD97F00224078 /* Owners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Owners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35EE7EF233BD97F00224078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35EE7F1233BD97F00224078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +153,26 @@
 			path = "Collection Utils";
 			sourceTree = "<group>";
 		};
+		C350F61F23A69D6C00559AED /* TableView Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C350F62623A6B42100559AED /* Views */,
+				C350F62023A69D8E00559AED /* FeedTableViewDelegate.swift */,
+				C350F62223A69DBE00559AED /* FeedTableViewDataSource.swift */,
+				C350F62423A69E0A00559AED /* FeedTableViewCell.swift */,
+			);
+			path = "TableView Utils";
+			sourceTree = "<group>";
+		};
+		C350F62623A6B42100559AED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C350F62723A6B42E00559AED /* PostInfoView.swift */,
+				C350F62923A6B44800559AED /* UserInfoHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C35EE7E3233BD97F00224078 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +245,7 @@
 		C372532E235233FD00B11E39 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				C350F61F23A69D6C00559AED /* TableView Utils */,
 				C3725336235234A700B11E39 /* ViewControllerBuilder */,
 				C37253352352349E00B11E39 /* ViewController */,
 			);
@@ -280,6 +313,7 @@
 		C3725336235234A700B11E39 /* ViewControllerBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				C350F62B23A6B58F00559AED /* FeedViewControllerBuilder.swift */,
 			);
 			path = ViewControllerBuilder;
 			sourceTree = "<group>";
@@ -478,18 +512,24 @@
 			files = (
 				C350F61223A6669D00559AED /* ServicesCollectionDelegate.swift in Sources */,
 				C3ADE7C523562E6D009B6377 /* UIColor+Extension.swift in Sources */,
+				C350F62823A6B42E00559AED /* PostInfoView.swift in Sources */,
 				C350F61E23A67A6000559AED /* ServicesViewControllerBuilder.swift in Sources */,
 				C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */,
 				C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */,
+				C350F62123A69D8E00559AED /* FeedTableViewDelegate.swift in Sources */,
+				C350F62A23A6B44800559AED /* UserInfoHeaderView.swift in Sources */,
 				C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */,
 				C350F60D23A663BC00559AED /* ParentViewController.swift in Sources */,
 				C32F2B062352428200D1899C /* UIImage+Extension.swift in Sources */,
 				C350F61623A672A900559AED /* ServiceCollectionCell.swift in Sources */,
+				C350F62C23A6B58F00559AED /* FeedViewControllerBuilder.swift in Sources */,
 				C350F61823A674DE00559AED /* ServiceCollectionViewModel.swift in Sources */,
 				C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */,
+				C350F62323A69DBE00559AED /* FeedTableViewDataSource.swift in Sources */,
 				C3ADE7C823563077009B6377 /* FeedViewController.swift in Sources */,
 				C350F61A23A675C200559AED /* ServicesCollectionHolder.swift in Sources */,
 				C350F61023A6668600559AED /* ServicesCollectionDataSource.swift in Sources */,
+				C350F62523A69E0A00559AED /* FeedTableViewCell.swift in Sources */,
 				C3ADE7CA2356310C009B6377 /* CreatePostViewController.swift in Sources */,
 				C3ADE7CC2356313A009B6377 /* ServicesViewController.swift in Sources */,
 				C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */,
