@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		C32F2B062352428200D1899C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F2B052352428200D1899C /* UIImage+Extension.swift */; };
 		C350F60D23A663BC00559AED /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F60C23A663BC00559AED /* ParentViewController.swift */; };
+		C350F61023A6668600559AED /* ServicesCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F60F23A6668600559AED /* ServicesCollectionDataSource.swift */; };
+		C350F61223A6669D00559AED /* ServicesCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61123A6669D00559AED /* ServicesCollectionDelegate.swift */; };
+		C350F61423A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61323A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift */; };
+		C350F61623A672A900559AED /* ServiceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61523A672A900559AED /* ServiceCollectionCell.swift */; };
+		C350F61823A674DE00559AED /* ServiceCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61723A674DE00559AED /* ServiceCollectionViewModel.swift */; };
+		C350F61A23A675C200559AED /* ServicesCollectionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61923A675C200559AED /* ServicesCollectionHolder.swift */; };
+		C350F61C23A679EC00559AED /* ServicesViewModelInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61B23A679EC00559AED /* ServicesViewModelInitializer.swift */; };
+		C350F61E23A67A6000559AED /* ServicesViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F61D23A67A6000559AED /* ServicesViewControllerBuilder.swift */; };
 		C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7EF233BD97F00224078 /* AppDelegate.swift */; };
 		C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7F1233BD97F00224078 /* SceneDelegate.swift */; };
 		C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7F3233BD97F00224078 /* ViewController.swift */; };
@@ -48,6 +56,14 @@
 		B0990EC24EE0DA45047C9E79 /* Pods-OwnersIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS.debug.xcconfig"; path = "Target Support Files/Pods-OwnersIOS/Pods-OwnersIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C32F2B052352428200D1899C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		C350F60C23A663BC00559AED /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		C350F60F23A6668600559AED /* ServicesCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionDataSource.swift; sourceTree = "<group>"; };
+		C350F61123A6669D00559AED /* ServicesCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionDelegate.swift; sourceTree = "<group>"; };
+		C350F61323A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionDelegateFlowLayout.swift; sourceTree = "<group>"; };
+		C350F61523A672A900559AED /* ServiceCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionCell.swift; sourceTree = "<group>"; };
+		C350F61723A674DE00559AED /* ServiceCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewModel.swift; sourceTree = "<group>"; };
+		C350F61923A675C200559AED /* ServicesCollectionHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionHolder.swift; sourceTree = "<group>"; };
+		C350F61B23A679EC00559AED /* ServicesViewModelInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModelInitializer.swift; sourceTree = "<group>"; };
+		C350F61D23A67A6000559AED /* ServicesViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewControllerBuilder.swift; sourceTree = "<group>"; };
 		C35EE7EC233BD97F00224078 /* Owners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Owners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35EE7EF233BD97F00224078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35EE7F1233BD97F00224078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +128,20 @@
 				C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C350F60E23A6666B00559AED /* Collection Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C350F60F23A6668600559AED /* ServicesCollectionDataSource.swift */,
+				C350F61123A6669D00559AED /* ServicesCollectionDelegate.swift */,
+				C350F61323A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift */,
+				C350F61523A672A900559AED /* ServiceCollectionCell.swift */,
+				C350F61723A674DE00559AED /* ServiceCollectionViewModel.swift */,
+				C350F61923A675C200559AED /* ServicesCollectionHolder.swift */,
+				C350F61B23A679EC00559AED /* ServicesViewModelInitializer.swift */,
+			);
+			path = "Collection Utils";
 			sourceTree = "<group>";
 		};
 		C35EE7E3233BD97F00224078 = {
@@ -204,6 +234,7 @@
 		C37253302352344E00B11E39 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C350F60E23A6666B00559AED /* Collection Utils */,
 				C37253322352346A00B11E39 /* ViewControllerBuilder */,
 				C37253312352346000B11E39 /* ViewController */,
 			);
@@ -221,6 +252,7 @@
 		C37253322352346A00B11E39 /* ViewControllerBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				C350F61D23A67A6000559AED /* ServicesViewControllerBuilder.swift */,
 			);
 			path = ViewControllerBuilder;
 			sourceTree = "<group>";
@@ -447,17 +479,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C350F61223A6669D00559AED /* ServicesCollectionDelegate.swift in Sources */,
 				C3ADE7C523562E6D009B6377 /* UIColor+Extension.swift in Sources */,
+				C350F61E23A67A6000559AED /* ServicesViewControllerBuilder.swift in Sources */,
 				C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */,
 				C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */,
 				C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */,
 				C350F60D23A663BC00559AED /* ParentViewController.swift in Sources */,
 				C32F2B062352428200D1899C /* UIImage+Extension.swift in Sources */,
+				C350F61623A672A900559AED /* ServiceCollectionCell.swift in Sources */,
+				C350F61823A674DE00559AED /* ServiceCollectionViewModel.swift in Sources */,
 				C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */,
+				C350F61423A668B600559AED /* ServicesCollectionDelegateFlowLayout.swift in Sources */,
 				C3ADE7C823563077009B6377 /* FeedViewController.swift in Sources */,
+				C350F61A23A675C200559AED /* ServicesCollectionHolder.swift in Sources */,
+				C350F61023A6668600559AED /* ServicesCollectionDataSource.swift in Sources */,
 				C3ADE7CA2356310C009B6377 /* CreatePostViewController.swift in Sources */,
 				C3ADE7CC2356313A009B6377 /* ServicesViewController.swift in Sources */,
 				C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */,
+				C350F61C23A679EC00559AED /* ServicesViewModelInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
