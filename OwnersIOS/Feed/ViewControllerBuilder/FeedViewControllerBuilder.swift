@@ -6,4 +6,14 @@
 //  Copyright © 2019 Sofia. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class FeedViewControllerBuilder {
+    class func build() -> FeedViewController {
+        let viewController = FeedViewController()
+        
+        viewController.dataSource = FeedTableViewDataSource()
+        viewController.delegate = FeedTableViewDelegate()
+        return viewController
+    }
+}
