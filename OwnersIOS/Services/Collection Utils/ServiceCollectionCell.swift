@@ -33,7 +33,7 @@ class ServiceCollectionCell: UICollectionViewCell {
         addSubview(imageView)
         imageView.snp.makeConstraints { maker in
             maker.center.equalToSuperview()
-            maker.size.equalToSuperview().multipliedBy(0.3)
+            maker.size.equalToSuperview().multipliedBy(0.2)
         }
         
         imageView.image = UIImage(named: imageName)?.tint(with: .purpleBlue)
