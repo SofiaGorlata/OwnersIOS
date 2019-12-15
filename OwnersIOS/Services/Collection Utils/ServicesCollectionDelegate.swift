@@ -6,4 +6,10 @@
 //  Copyright © 2019 Sofia. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ServicesCollectionDelegate: NSObject, UICollectionViewDelegate {
+    
+}
+
+
