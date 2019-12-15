@@ -32,7 +32,7 @@ class MainTabBarController: UITabBarController {
         let navCreatePostViewController = UINavigationController(rootViewController: createPostViewController)
         
         
-        let servicesViewController = ServicesViewController()
+        let servicesViewController = ServicesViewControllerBuilder.build()
         let navServicesViewController = UINavigationController(rootViewController: servicesViewController)
         
         
