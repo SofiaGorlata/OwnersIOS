@@ -25,7 +25,7 @@ class MainTabBarController: UITabBarController {
         tabBar.tintColor = UIColor.purpleBlue
         tabBar.unselectedItemTintColor = UIColor.tabbarGray
         
-        let feedViewController = FeedViewController()
+        let feedViewController = FeedViewControllerBuilder.build()
         let navFeedViewController = UINavigationController(rootViewController: feedViewController)
         
         let createPostViewController = CreatePostViewController()
