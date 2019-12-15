@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class ServicesCollectionHolder {
+    private let items: [ServiceCollectionViewModel]
+    
+    init(items: [ServiceCollectionViewModel]) {
+        self.items = items
+    }
+    
+    var itemsCount: Int {
+        return items.count
+    }
+    
+    func item(at index: Int) -> ServiceCollectionViewModel {
+        return items[index]
+    }
+}
