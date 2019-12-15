@@ -8,14 +8,10 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class FeedViewController: ParentViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.tintColor = .purpleBlue
-        let imageButton = UIImage(named: "person")
-        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: imageButton, style: .plain, target: nil, action: nil)
-        
         view.backgroundColor = .sand
     }
 }

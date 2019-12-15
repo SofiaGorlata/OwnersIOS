@@ -32,7 +32,7 @@ class MainTabBarController: UITabBarController {
         let navCreatePostViewController = UINavigationController(rootViewController: createPostViewController)
         
         
-        let servicesViewController = ServicesViewController()
+        let servicesViewController = ServicesViewControllerBuilder.build()
         let navServicesViewController = UINavigationController(rootViewController: servicesViewController)
         
         
@@ -41,15 +41,12 @@ class MainTabBarController: UITabBarController {
         viewControllers = tabBarList
         
         let feedItem = tabBar.items?[0]
-        feedItem?.image = UIImage(named: "baseline_house_white")
-        feedItem?.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: 0, right: 0)
+        feedItem?.image = UIImage(named: "home")?.tint(with: .darkPurple)
         
         let addPostItem = tabBar.items?[1]
-        addPostItem?.image = UIImage(named: "baseline_add_box_white")
-        addPostItem?.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: 0, right: 0)
+        addPostItem?.image = UIImage(named: "add-new")?.tint(with: .darkPurple)
         
         let services = tabBar.items?[2]
-        services?.image = UIImage(named: "baseline_build_white")
-        services?.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: 0, right: 0)
+        services?.image = UIImage(named: "maintenance")?.tint(with: .darkPurple)
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreatePostViewController: UIViewController {
+class CreatePostViewController: ParentViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
