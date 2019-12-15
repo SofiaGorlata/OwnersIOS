@@ -1,5 +1,5 @@
 //
-//  ServicesViewController.swift
+//  ServicesViewControllerBuilder.swift
 //  OwnersIOS
 //
 //  Created by Sofia on 15.12.2019.
@@ -12,6 +12,12 @@ class ServicesViewControllerBuilder {
     
     class func build() -> ServicesViewController {
         let viewController = ServicesViewController()
+        
+        let viewModelInitializer = ServicesViewModelInitializer()
+        let viewModelHolder = ServicesCollectionHolder(items: viewModelInitializer.initializeCollection())
+        viewController.dataSource = ServicesCollectionDataSource(viewModelHolder: viewModelHolder)
+        viewController.delegate = ServicesCollectionDelegate()
+        
         return viewController
     }
 }
