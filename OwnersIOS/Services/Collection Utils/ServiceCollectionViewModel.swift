@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class ServiceCollectionViewModel {
+    
+    let imageName: String
+    let title: String
+    
+    init(imageName: String, title: String) {
+        self.imageName = imageName
+        self.title = title
+    }
+}
