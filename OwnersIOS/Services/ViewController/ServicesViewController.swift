@@ -7,11 +7,23 @@
 //
 
 import UIKit
+import SnapKit
 
-class ServicesViewController: UIViewController {
+class ServicesViewController: ParentViewController {
+    
+    var serviceCollection: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        serviceCollection = UICollectionView()
+        view.addSubview(serviceCollection)
+        serviceCollection.snp.makeConstraints { maker in
+            maker.edges.equalToSuperview()
+        }
+        
+        serviceCollection.backgroundColor = .red
         
         view.backgroundColor = .purpleBlue
     }
