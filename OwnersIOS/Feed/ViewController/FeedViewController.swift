@@ -15,13 +15,3 @@ class FeedViewController: ParentViewController {
         view.backgroundColor = .sand
     }
 }
-
-class ParentViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.navigationBar.tintColor = .purpleBlue
-        let imageButton = UIImage(named: "person")
-        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: imageButton, style: .plain, target: nil, action: nil)
-    }
-}

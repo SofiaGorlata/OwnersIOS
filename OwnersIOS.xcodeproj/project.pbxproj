@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C32F2B062352428200D1899C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F2B052352428200D1899C /* UIImage+Extension.swift */; };
+		C350F60D23A663BC00559AED /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350F60C23A663BC00559AED /* ParentViewController.swift */; };
 		C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7EF233BD97F00224078 /* AppDelegate.swift */; };
 		C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7F1233BD97F00224078 /* SceneDelegate.swift */; };
 		C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE7F3233BD97F00224078 /* ViewController.swift */; };
@@ -46,7 +47,8 @@
 		6369573B46B5A5DE1C392A6D /* Pods-OwnersIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS.release.xcconfig"; path = "Target Support Files/Pods-OwnersIOS/Pods-OwnersIOS.release.xcconfig"; sourceTree = "<group>"; };
 		B0990EC24EE0DA45047C9E79 /* Pods-OwnersIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwnersIOS.debug.xcconfig"; path = "Target Support Files/Pods-OwnersIOS/Pods-OwnersIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C32F2B052352428200D1899C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		C35EE7EC233BD97F00224078 /* OwnersIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwnersIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C350F60C23A663BC00559AED /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		C35EE7EC233BD97F00224078 /* Owners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Owners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35EE7EF233BD97F00224078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35EE7F1233BD97F00224078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C35EE7F3233BD97F00224078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +129,7 @@
 		C35EE7ED233BD97F00224078 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C35EE7EC233BD97F00224078 /* OwnersIOS.app */,
+				C35EE7EC233BD97F00224078 /* Owners.app */,
 				C35EE802233BD98400224078 /* OwnersIOSTests.xctest */,
 				C35EE80D233BD98400224078 /* OwnersIOSUITests.xctest */,
 			);
@@ -176,6 +178,7 @@
 			children = (
 				C372532B2352326100B11E39 /* MainTabBarController.swift */,
 				C37253372352358E00B11E39 /* ViewControllersFactory.swift */,
+				C350F60C23A663BC00559AED /* ParentViewController.swift */,
 			);
 			path = MainNavigation;
 			sourceTree = "<group>";
@@ -288,7 +291,7 @@
 			);
 			name = OwnersIOS;
 			productName = OwnersIOS;
-			productReference = C35EE7EC233BD97F00224078 /* OwnersIOS.app */;
+			productReference = C35EE7EC233BD97F00224078 /* Owners.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C35EE801233BD98400224078 /* OwnersIOSTests */ = {
@@ -448,6 +451,7 @@
 				C35EE7F4233BD97F00224078 /* ViewController.swift in Sources */,
 				C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */,
 				C35EE7F0233BD97F00224078 /* AppDelegate.swift in Sources */,
+				C350F60D23A663BC00559AED /* ParentViewController.swift in Sources */,
 				C32F2B062352428200D1899C /* UIImage+Extension.swift in Sources */,
 				C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */,
 				C3ADE7C823563077009B6377 /* FeedViewController.swift in Sources */,
@@ -636,7 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = universityApp.OwnersIOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Owners;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -656,7 +660,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = universityApp.OwnersIOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Owners;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
