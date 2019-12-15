@@ -6,14 +6,6 @@ target 'OwnersIOS' do
   use_frameworks!
 
   # Pods for OwnersIOS
-
-  target 'OwnersIOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'OwnersIOSUITests' do
-    # Pods for testing
-  end
-
+  pod 'SnapKit'
+  
 end
