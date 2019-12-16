@@ -10,9 +10,23 @@ import UIKit
 
 class CreatePostViewController: ParentViewController {
     
+    var postView: PostView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .darkPurple
+        view.backgroundColor = .white
+        
+        postView = PostView()
+        view.addSubview(postView)
+        
+        postView.snp.makeConstraints { maker in
+            maker.top.equalToSuperview().offset(100)
+            maker.bottom.equalToSuperview().offset(-10)
+            maker.leading.equalToSuperview().offset(50)
+            maker.trailing.equalToSuperview().offset(-50)
+        }
+        
+        postView.load()
     }
 }

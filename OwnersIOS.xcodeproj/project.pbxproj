@@ -30,6 +30,8 @@
 		C35EE7FC233BD98400224078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35EE7FA233BD98400224078 /* LaunchScreen.storyboard */; };
 		C35EE807233BD98400224078 /* OwnersIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE806233BD98400224078 /* OwnersIOSTests.swift */; };
 		C35EE812233BD98400224078 /* OwnersIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE811233BD98400224078 /* OwnersIOSUITests.swift */; };
+		C36BC0F323A8166B000C3F1D /* CreatePostViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36BC0F223A8166B000C3F1D /* CreatePostViewControllerBuilder.swift */; };
+		C36BC0F623A81717000C3F1D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36BC0F523A81717000C3F1D /* PostView.swift */; };
 		C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372532B2352326100B11E39 /* MainTabBarController.swift */; };
 		C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37253372352358E00B11E39 /* ViewControllersFactory.swift */; };
 		C3ADE7C523562E6D009B6377 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */; };
@@ -88,6 +90,8 @@
 		C35EE80D233BD98400224078 /* OwnersIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwnersIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35EE811233BD98400224078 /* OwnersIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnersIOSUITests.swift; sourceTree = "<group>"; };
 		C35EE813233BD98400224078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36BC0F223A8166B000C3F1D /* CreatePostViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewControllerBuilder.swift; sourceTree = "<group>"; };
+		C36BC0F523A81717000C3F1D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		C372532B2352326100B11E39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C37253372352358E00B11E39 /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
 		C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -232,6 +236,14 @@
 			path = OwnersIOSUITests;
 			sourceTree = "<group>";
 		};
+		C36BC0F423A816D5000C3F1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C36BC0F523A81717000C3F1D /* PostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C372532D235233A300B11E39 /* MainNavigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +267,7 @@
 		C372532F2352340C00B11E39 /* CreatePost */ = {
 			isa = PBXGroup;
 			children = (
+				C36BC0F423A816D5000C3F1D /* View */,
 				C37253342352348800B11E39 /* ViewControllerBuilder */,
 				C37253332352347C00B11E39 /* ViewController */,
 			);
@@ -298,6 +311,7 @@
 		C37253342352348800B11E39 /* ViewControllerBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				C36BC0F223A8166B000C3F1D /* CreatePostViewControllerBuilder.swift */,
 			);
 			path = ViewControllerBuilder;
 			sourceTree = "<group>";
@@ -534,6 +548,8 @@
 				C3ADE7CC2356313A009B6377 /* ServicesViewController.swift in Sources */,
 				C35EE7F2233BD97F00224078 /* SceneDelegate.swift in Sources */,
 				C350F61C23A679EC00559AED /* ServicesViewModelInitializer.swift in Sources */,
+				C36BC0F623A81717000C3F1D /* PostView.swift in Sources */,
+				C36BC0F323A8166B000C3F1D /* CreatePostViewControllerBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
