@@ -32,6 +32,7 @@
 		C35EE812233BD98400224078 /* OwnersIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE811233BD98400224078 /* OwnersIOSUITests.swift */; };
 		C36BC0F323A8166B000C3F1D /* CreatePostViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36BC0F223A8166B000C3F1D /* CreatePostViewControllerBuilder.swift */; };
 		C36BC0F623A81717000C3F1D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36BC0F523A81717000C3F1D /* PostView.swift */; };
+		C36BC0F823A8278B000C3F1D /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36BC0F723A8278B000C3F1D /* InputView.swift */; };
 		C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372532B2352326100B11E39 /* MainTabBarController.swift */; };
 		C37253382352358E00B11E39 /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37253372352358E00B11E39 /* ViewControllersFactory.swift */; };
 		C3ADE7C523562E6D009B6377 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */; };
@@ -92,6 +93,7 @@
 		C35EE813233BD98400224078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36BC0F223A8166B000C3F1D /* CreatePostViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewControllerBuilder.swift; sourceTree = "<group>"; };
 		C36BC0F523A81717000C3F1D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		C36BC0F723A8278B000C3F1D /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		C372532B2352326100B11E39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C37253372352358E00B11E39 /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
 		C3ADE7C423562E6D009B6377 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				C36BC0F523A81717000C3F1D /* PostView.swift */,
+				C36BC0F723A8278B000C3F1D /* InputView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				C350F62C23A6B58F00559AED /* FeedViewControllerBuilder.swift in Sources */,
 				C350F61823A674DE00559AED /* ServiceCollectionViewModel.swift in Sources */,
 				C372532C2352326100B11E39 /* MainTabBarController.swift in Sources */,
+				C36BC0F823A8278B000C3F1D /* InputView.swift in Sources */,
 				C350F62323A69DBE00559AED /* FeedTableViewDataSource.swift in Sources */,
 				C3ADE7C823563077009B6377 /* FeedViewController.swift in Sources */,
 				C350F61A23A675C200559AED /* ServicesCollectionHolder.swift in Sources */,
